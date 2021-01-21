@@ -33,3 +33,9 @@
     background: #22c1c3;
     color: #fff;
 }
+
+#messages {
+    overflow: scroll;
+    height:585px;
+    width: max-content;
+}
