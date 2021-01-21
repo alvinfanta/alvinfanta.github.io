@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="styles.css">
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
 
@@ -43,9 +45,9 @@
     html += "<li id='message-"+ snapshot.key +"'>";
         //show delete button if message is sent by me
         if(snapshot.val().sender == myName) {
-            html += "<button data-id='" + snapshot.key +"' onclick='deleteMessage(this);'>";
+            html += "<button id='btn'  data-id='" + snapshot.key +"' onclick='deleteMessage(this);'>";
                 html += "Delete";
-            html += "</button>";
+            html += "</button>   ";
         }
         html += snapshot.val().sender + ": " + snapshot.val().message;
     html += "</li>";
@@ -72,7 +74,7 @@
 <form onsubmit="return sendMessage();">
     <input id="messaage" placeholder="Enter message" autocomplete="off">
 
-    <input type="submit">
+    <input id="submit_button" type="submit">
 </form>
 
 <!-- create a list -->
