@@ -37,5 +37,5 @@
 #messages {
     overflow: scroll;
     height:585px;
-    width: max-content;
+    width:100%;
 }
