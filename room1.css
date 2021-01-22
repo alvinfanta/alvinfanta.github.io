@@ -1,7 +1,11 @@
-* {
-    background: rgb(150,190,116);
-    background: radial-gradient(circle, rgba(150,190,116,1) 0%, rgba(150,190,116,1) 5%, rgba(34,193,195,1) 100%);
+#messaage {
     height: 36px;
+}
+
+
+* {
+    background-color: rgb(0, 219, 219);
+    height:max-content;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
@@ -13,29 +17,33 @@
 }
 
 #btn {
+    font-size: 1rem;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 12px;
     background: red;
-    color: #a8a8a8;
+    color: #e7e7e7;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 #messaage {
     border: none;
-    outline:olivedrab;
     background: #22c1c3;
     color: #fff;
 }
 
 #submit_button {
+    outline: black;
+    outline-width: 0.5px;
     border: none;
-    outline:olivedrab;
     background: #22c1c3;
     color: #fff;
 }
 
 #messages {
-    overflow: scroll;
+    overflow-y:scroll;
+    overflow-x: hidden;
     height:585px;
-    width:100%;
+    width:device-width;
 }
