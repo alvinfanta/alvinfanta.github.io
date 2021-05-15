@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   color: #fff;
   padding-bottom: -10px;
+  margin-top: -20px;
 }
 
 .max-width {
@@ -33,14 +34,15 @@ body {
   position: fixed;
   width: 100%;
   padding: 15px 0;
+  padding-top: 35px;
   font-family: "Roboto", sans-serif;
   background-color: rgb(0, 0, 0, 0.5);
+  height: fit-content;
 }
 
 .navbar .max-width {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navbar .logo {
@@ -103,94 +105,40 @@ body {
   width: 100%;
 }
 
-/* Home Section */
-.home {
+.projects {
+  padding: 100px;
+  padding-top: 200px;
+  height: 800px;
   display: flex;
-  height: fit-content;
-  max-width: 100%;
-  margin: auto;
-  text-align: center;
-}
-
-.title {
-  font-size: 1000%;
-  margin: 0px;
-  padding-top: 140px;
-  font-family: "Antonio", sans-serif;
-  background-color: transparent;
-  transition: 0.5s;
-}
-
-.title:hover {
-  text-shadow: 0 0 5px #fff0f3;
-  transition: 0.5s;
-}
-
-.subtitle {
-  font-size: 30px;
-  font-family: "Hind Siliguri", sans-serif;
-  padding-bottom: 75px;
-}
-
-.home img {
-  max-width: 64px;
-}
-
-.home-content {
-  margin-bottom: -20px;
-  height: fit-content;
-  padding-bottom: 30px;
-  width: 100%;
-  opacity: 100%;
-
-  background: #fbe2e6;
-  background-size: cover;
-}
-
-.QandA {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.QandA h1 {
   font-family: "Quicksand", sans-serif;
   color: black;
-  font-size: large;
+}
+
+.projects .firstSection {
+  padding: 20px;
+  max-width: 200px;
+  background-color: aliceblue;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.185);
+  background-image: url("MinecraftDirt.jpg");
+}
+
+.projects .title {
   text-align: center;
-  padding: 50px;
-  padding-bottom: 35px;
-  font-size: 40px;
-  text-decoration: underline;
-}
-
-.QandA p {
-  margin: 10px;
-  text-align: justify;
-}
-
-.QandA p {
-  font-family: "Quicksand", sans-serif;
-  text-align: justify;
-  font-weight: bolder;
-  font-size: 25px;
-  color: black;
-}
-.QandA p.answer {
-  padding-left: 3px;
-  padding-bottom: 30px;
-}
-
-.sosmed {
+  font-size: 35px;
+  background-color: aliceblue;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -16px;
+  margin-top: 80px;
   padding: 30px;
-  display: block;
-  text-align: center;
-  height: fit-content;
-  margin-bottom: -50px;
 }
-
-.sosmed img {
-  max-width: 64px;
-  max-height: 64px;
+.projects .detail {
+  background-color: aliceblue;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px;
 }
 
 .bugTitle {
@@ -215,37 +163,13 @@ body {
   }
 }
 
-@media only screen and (max-device-width: 600px) {
-  .home {
-    max-width: 600px;
-    display: block;
-  }
-
-  .title {
-    position: relative;
-    padding-top: 150px;
-    font-size: 280%;
-  }
-}
-
-@media only screen and (max-device-width: 600px) {
-  * {
-    max-width: 100%;
-  }
-
-  .home-content {
-    height: fit-content;
-    padding-bottom: 30px;
-  }
-}
-
 /* Responsive navbar */
 
 .navbar .icon {
   display: none;
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -255,7 +179,7 @@ body {
   }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
   }
@@ -271,22 +195,9 @@ body {
   }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .logo {
     margin-left: -100px;
     margin-right: 0px;
-  }
-
-  .sosmed {
-    text-align: center;
-    align-items: center;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-  }
-
-  .sosmed a img {
-    max-width: 64px;
-    max-height: 64px;
   }
 }
