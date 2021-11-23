@@ -1,84 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Full Page JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body> 
+    <div id="fullPage">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - AlvinFanta</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="test.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="/">Alvin<span>Fanta</span></a></div>
-            <!--            <div class="menu">
-                <a href="projects.html">Projects</a>
-            </div>-->
-
+        <div class="section s1">
+            <h1>AlvinFanta</h1>
         </div>
-    </nav>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-heading">
-                <div class="title">AlvinFanta</div>
-                <div class="text">
-                    <p class="subtitle">Hewwo &#x1F60A;</p>
-                </div>
-
-                <section class="sosmed">
-                    <a href="https://www.youtube.com/channel/UCsitKP3i-R0dTvcpoGX_HMg" target="_blank">
-                        <img src="youtube.png" alt="submit">
-                    </a>
-                    <a href="https://www.instagram.com/alvin_fanta/" target="_blank">
-                        <img src="instagram.png" alt="submit">
-                    </a>
-                    <a href="https://www.reddit.com/r/AlvinFanta/" target="_blank">
-                        <img src="reddit.png" alt="submit">
-                    </a>
-                    <a href="https://discord.io/AlvinFanta" target="_blank">
-                        <img src="discord.png" alt="submit">
-                    </a>
-                    <a href="https://twitter.com/AlvinFanta" target="_blank">
-                        <img src="twitter.png" alt="submit">
-                    </a>
-                    <a href="https://github.com/AlvinFanta" target="_blank">
-                        <img src="github.png" alt="submit">
-                    </a>
-                    <a href="https://www.twitch.tv/alvinfanta" target="_blank">
-                        <img src="twitch.png" alt="submit">
-                    </a>
-                </section>
+        <div class="section s2">
+            <div class="title">
+                <h1>About Me</h1>
             </div>
-
+            
+            <div class="aboutme">
+                <p>Hi, I'm Alvin! I'm a middle school student that loves playing games and programming. I'm currently learning about HTML, CSS and JS. I have 1 year of experience in Python. I've made a game in the past. I know it's not the best.(Of course it's not.)</p>
+            </div>
         </div>
-    </section>
-    <section class="home-content">
-        <section class="QandA">
-            <h1>Q&A</h1>
-            <p class="question">Q: What's your name?</p>
-            <p class="answer">A: What kind of f***ing question is that? You just saw my website's header!</p>
-            <p class="question">Q: How long have you been programming for?</p>
-            <p class="answer">A: I think I started when I was in grade 4? I think it's around 2016 - 2017. So, around 4
-                to 5 years!</p>
-            <p class="question">Q: Why do you like to say hewwo instead of hello?</p>
-            <p class="answer">A: I just like it XD</p>
-            <p class="question">Q: Can you tell us about your upload/live schedule?</p>
-            <p class="answer">A: Well........ I don't really have a schedule. &#x1F60A;</p>
-            <p class="question">Q: Can I get the source code of this current website?</p>
-            <p class="answer">A: Sure! Everything you possibly need for this website will be on my github!</p>
-        </section>
 
-    </section>
+        <div class="section s3">
+            <h1>Section 3</h1>
+        </div>
 
-    <section class="Extra">
-        <p class="bugTitle">This website haven't fully finished yet. So please expect some bugs!</p>
-    </section>
-</body>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script>
+        
+            new fullpage('#fullPage', {
+                autoscrolling: true,
+                navigation: true,
+                anchors: ['Home', 'AboutMe', 'Contact'],
+                navigationTooltips: ['Home', 'About Me', 'Contact'],
+                scrollingSpeed: 1000,
+                slidesNavigation: true,
+                controlArrows: false
+            })
 
+        </script>
+    
+    </body>
 </html>
